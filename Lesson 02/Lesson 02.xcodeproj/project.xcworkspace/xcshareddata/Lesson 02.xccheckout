@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>618E47E4-CF12-45E7-8379-6D2B5FB33F36</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7B9AE864ADD201FEE67489EA6D3F41229CB6988E</key>
+		<string>https://github.com/colloquet/MOB_Assignments.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Lesson 02/Lesson 02.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7B9AE864ADD201FEE67489EA6D3F41229CB6988E</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/colloquet/MOB_Assignments.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7B9AE864ADD201FEE67489EA6D3F41229CB6988E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7B9AE864ADD201FEE67489EA6D3F41229CB6988E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MOB_Assignments</string>
+		</dict>
+	</array>
+</dict>
+</plist>
