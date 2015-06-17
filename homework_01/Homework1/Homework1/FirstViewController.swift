@@ -19,52 +19,44 @@ class FirstViewController: UIViewController {
         placeholderLabel.text = str
     }
     
-    func greeting(name:String, age:String) {
-        println("Hello " + name + ", you are " + age + " years old!")
+    func greeting(name:String, age:Int) {
+        println("Hello " + name + ", you are " + String(age) + " years old!")
     }
     
-    func ageLevel(age:String) {
-        var age:Int! = age.toInt()
-        
-        if age == nil {
-            println("enter your age!")
-        } else {
-            if age >= 16 {
-                println("You can drive")
-            }
-            if age >= 18 {
-                println("You can vote")
-            }
-            if age >= 21 {
-                println("You can drink")
-            }
+    func ageLevel(age:Int) {
+        if age >= 16 {
+            println("You can drive")
         }
-        
-        
+        if age >= 18 {
+            println("You can vote")
+        }
+        if age >= 21 {
+            println("You can drink")
+        }
     }
     
-    func ageRight(age:String) {
-        var age:Int! = age.toInt()
-        
-        if age == nil {
-            println("enter your age!")
-        } else {
-            if age >= 16 && age < 18 {
-                println("You can drive")
-            }
-            else if age >= 18 && age < 21 {
-                println("You can drive and vote")
-            }
-            else if age >= 21 {
-                println("you can drive, vote and drink (but not at the same time!)")
-            }
+    func ageRight(age:Int) {
+        if age >= 16 && age < 18 {
+            println("You can drive")
+        }
+        else if age >= 18 && age < 21 {
+            println("You can drive and vote")
+        }
+        else if age >= 21 {
+            println("you can drive, vote and drink (but not at the same time!)")
         }
     }
     
     @IBAction func buttonClick(sender: AnyObject) {
         changeLabelText("hello world!")
-        greeting(nameTextField.text, age: ageTextField.text)
-        ageLevel(ageTextField.text)
-        ageRight(ageTextField.text)
+        
+        if ageTextField.text.isEmpty {
+            println("Enter your age!")
+        } else {
+            var age:Int! = ageTextField.text.toInt()
+            greeting(nameTextField.text, age: age)
+            ageLevel(age)
+            ageRight(age)
+        }
     }
 }
