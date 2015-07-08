@@ -10,10 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
     var shouldReplace:Bool = true
-    var firstValue:Int? = 0
-    var secondValue:Int? = 0
-    var result:Int? = 0
-    var currentValue:Int? = 0
+    var firstValue:Double? = 0
+    var result:Double? = 0
+    var currentValue:Double? = 0
+    var lastOperator:String? = ""
     var method = ""
     
     @IBOutlet weak var displayLabel: UILabel!
@@ -29,12 +29,31 @@ class ViewController: UIViewController {
                 displayLabel.text = displayLabel.text! + number
             }
             shouldReplace = false
-            var display:Int? = displayLabel.text?.stringByReplacingOccurrencesOfString(",", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil).toInt()!
+            var display:Double? = (displayLabel.text!.stringByReplacingOccurrencesOfString(",", withString: "", options: NSStringCompareOptions.LiteralSearch, range: nil) as NSString).doubleValue
             
             currentValue = display
             
             displayLabel.text = fmt.stringFromNumber(display!)
         }
+    }
+    
+    @IBAction func dotClick(sender: UIButton) {
+        if shouldReplace == false {
+            displayLabel.text = displayLabel.text! + sender.titleLabel!.text!
+        }
+    }
+    
+    @IBAction func negativeClick(sender: AnyObject) {
+        result = (displayLabel.text! as NSString).doubleValue * -1
+        currentValue = currentValue! * -1
+        displayLabel.text = String(format: "%g", result!)
+    }
+    
+    @IBAction func clearClick(sender: AnyObject) {
+        firstValue = 0
+        currentValue = 0
+        displayLabel.text = "0"
+        lastOperator = ""
     }
     
     @IBAction func numberClick(sender: AnyObject) {
@@ -43,46 +62,63 @@ class ViewController: UIViewController {
     }
     
     @IBAction func equalButton(sender: AnyObject) {
-
-    }
-    
-    @IBAction func operatorClick(sender: AnyObject) {
-        
-        switch sender.currentTitle!! {
+        switch lastOperator! {
         case "+":
-            if shouldReplace != true {
-                secondValue = currentValue
-                result = firstValue! + secondValue!
-                displayLabel.text = String(result!)
-                firstValue = result
-                shouldReplace = true
-            }
+            doMath("+")
         case "−":
-            if shouldReplace != true {
-                secondValue = currentValue
-                result = firstValue! - secondValue!
-                displayLabel.text = String(result!)
-                firstValue = result
-                shouldReplace = true
-            }
+            doMath("-")
         case "×":
-            if shouldReplace != true {
-                secondValue = currentValue
-                result = firstValue! * secondValue!
-                displayLabel.text = String(result!)
-                firstValue = result
-                shouldReplace = true
-            }
+            doMath("×")
         case "÷":
-            if shouldReplace != true {
-                secondValue = currentValue
-                result = firstValue! / secondValue!
-                displayLabel.text = String(result!)
-                firstValue = result
-                shouldReplace = true
-            }
+            doMath("÷")
         default: break
         }
+        shouldReplace = true
+    }
+    
+    func doMath(sign:String) {
+        let fmt = NSNumberFormatter()
+        fmt.numberStyle = .DecimalStyle
+        switch sign {
+        case "+":
+            result = firstValue! + currentValue!
+        case "-":
+            result = firstValue! - currentValue!
+        case "×":
+            result = firstValue! * currentValue!
+        case "÷":
+            result = firstValue! / currentValue!
+        default: break
+        }
+        displayLabel.text = String(format: "%g", result!)
+    }
+    
+    @IBAction func operatorClick(sender: UIButton) {
+        
+        if lastOperator == "" {
+            lastOperator = "+"
+        }
+        
+        if shouldReplace == false {
+            switch lastOperator! {
+            case "+":
+                doMath("+")
+            case "−":
+                doMath("-")
+            case "×":
+                doMath("×")
+            case "÷":
+                doMath("÷")
+            default: break
+            }
+        }
+    
+        lastOperator = sender.titleLabel!.text!
+        
+        firstValue = result
+        
+        shouldReplace = true
+        
     }
 
     override func viewDidLoad() {
