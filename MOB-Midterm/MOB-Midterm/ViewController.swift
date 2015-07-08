@@ -39,7 +39,7 @@ class ViewController: UIViewController {
     
     @IBAction func dotClick(sender: UIButton) {
         if shouldReplace == false {
-            displayLabel.text = displayLabel.text! + sender.titleLabel!.text!
+            displayLabel.text = displayLabel.text! + sender.currentTitle!
         }
     }
     
@@ -113,7 +113,7 @@ class ViewController: UIViewController {
             }
         }
     
-        lastOperator = sender.titleLabel!.text!
+        lastOperator = sender.currentTitle!
         
         firstValue = result
         
