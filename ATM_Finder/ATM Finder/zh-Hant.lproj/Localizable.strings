@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  ATM Finder
+
+  Created by Colloque Tsui on 24/8/15.
+  Copyright (c) 2015 Colloque Tsui. All rights reserved.
+*/
+
+"address" = "地址";
+"Bank" = "銀行";
+"Address" = "地址";
+"Service" = "服務";
+"Currency" = "貨幣";
+"Loading ATMs..." = "ATM載入中...";
+"Setting will take effect after you restart your application" = "語言設定會再重重新啟動後套用";

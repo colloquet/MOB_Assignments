@@ -1,0 +1,13 @@
+PODS:
+  - Instabug (4.1.4)
+  - MBProgressHUD (0.9.1)
+
+DEPENDENCIES:
+  - Instabug
+  - MBProgressHUD
+
+SPEC CHECKSUMS:
+  Instabug: de19c1b0f89c4e5deda6dd7f1dc3515e54238b08
+  MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
+
+COCOAPODS: 0.38.2

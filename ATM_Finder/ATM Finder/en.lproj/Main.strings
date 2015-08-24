@@ -1,0 +1,48 @@
+
+/* Class = "UIButton"; normalTitle = "Feedback"; ObjectID = "1I7-ub-3Dx"; */
+"1I7-ub-3Dx.normalTitle" = "Feedback";
+
+/* Class = "UIBarButtonItem"; title = "Apply"; ObjectID = "7Hk-MN-0md"; */
+"7Hk-MN-0md.title" = "Apply";
+
+/* Class = "UITableViewSection"; headerTitle = "Other"; ObjectID = "9Ux-x0-tfF"; */
+"9Ux-x0-tfF.headerTitle" = "Other";
+
+/* Class = "UILabel"; text = "Field type"; ObjectID = "AM8-2G-xzq"; */
+"AM8-2G-xzq.text" = "Field type";
+
+/* Class = "UILabel"; text = "Choose the banks you use"; ObjectID = "Bad-Q1-4O9"; */
+"Bad-Q1-4O9.text" = "Choose the banks you use";
+
+/* Class = "UITabBarItem"; title = "Settings"; ObjectID = "Hm4-bJ-5y0"; */
+"Hm4-bJ-5y0.title" = "Settings";
+
+/* Class = "UINavigationItem"; title = "Select Banks"; ObjectID = "Jd9-i8-W4s"; */
+"Jd9-i8-W4s.title" = "Select Banks";
+
+/* Class = "UINavigationItem"; title = "Settings"; ObjectID = "L90-2g-dQq"; */
+"L90-2g-dQq.title" = "Settings";
+
+/* Class = "UIBarButtonItem"; title = "Remove all"; ObjectID = "LqY-AA-mpO"; */
+"LqY-AA-mpO.title" = "Remove all";
+
+/* Class = "UITabBarItem"; title = "Map"; ObjectID = "RfN-Qs-pWC"; */
+"RfN-Qs-pWC.title" = "Map";
+
+/* Class = "UILabel"; text = "Banks"; ObjectID = "XBg-Ht-F4m"; */
+"XBg-Ht-F4m.text" = "Banks";
+
+/* Class = "UILabel"; text = "Language"; ObjectID = "Y4L-D5-JDJ"; */
+"Y4L-D5-JDJ.text" = "Language";
+
+/* Class = "UILabel"; text = "Feedback"; ObjectID = "b3r-BI-juQ"; */
+"b3r-BI-juQ.text" = "Feedback";
+
+/* Class = "UIBarButtonItem"; title = "Select all"; ObjectID = "bxj-Ie-18v"; */
+"bxj-Ie-18v.title" = "Select all";
+
+/* Class = "UITableViewSection"; headerTitle = "General"; ObjectID = "cll-EY-uBu"; */
+"cll-EY-uBu.headerTitle" = "General";
+
+/* Class = "UILabel"; text = "Field content"; ObjectID = "mc9-E2-BUl"; */
+"mc9-E2-BUl.text" = "Field content";

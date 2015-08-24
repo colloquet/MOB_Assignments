@@ -1,0 +1,60 @@
+
+/* Class = "UIButton"; normalTitle = "Feedback"; ObjectID = "1I7-ub-3Dx"; */
+"1I7-ub-3Dx.normalTitle" = "意見反映";
+
+/* Class = "UILabel"; text = "Language"; ObjectID = "6yF-Pj-Ks2"; */
+"6yF-Pj-Ks2.text" = "語言";
+
+/* Class = "UIBarButtonItem"; title = "Apply"; ObjectID = "7Hk-MN-0md"; */
+"7Hk-MN-0md.title" = "套用";
+
+/* Class = "UITableViewSection"; footerTitle = "You can also shake your device to show the bug reporter"; ObjectID = "9Ux-x0-tfF"; */
+"9Ux-x0-tfF.footerTitle" = "你亦可以搖動裝置反映意見";
+
+/* Class = "UITableViewSection"; headerTitle = "Other"; ObjectID = "9Ux-x0-tfF"; */
+"9Ux-x0-tfF.headerTitle" = "其他";
+
+/* Class = "UILabel"; text = "Field type"; ObjectID = "AM8-2G-xzq"; */
+"AM8-2G-xzq.text" = "Field type";
+
+/* Class = "UILabel"; text = "Choose the banks you use"; ObjectID = "Bad-Q1-4O9"; */
+"Bad-Q1-4O9.text" = "選擇你使用的銀行";
+
+/* Class = "UILabel"; text = "Subtitle"; ObjectID = "Eum-8p-EGZ"; */
+"Eum-8p-EGZ.text" = "Subtitle";
+
+/* Class = "UITabBarItem"; title = "Settings"; ObjectID = "Hm4-bJ-5y0"; */
+"Hm4-bJ-5y0.title" = "設定";
+
+/* Class = "UINavigationItem"; title = "選擇銀行"; ObjectID = "Jd9-i8-W4s"; */
+"Jd9-i8-W4s.title" = "選擇銀行";
+
+/* Class = "UINavigationItem"; title = "Settings"; ObjectID = "L90-2g-dQq"; */
+"L90-2g-dQq.title" = "設定";
+
+/* Class = "UIBarButtonItem"; title = "Remove all"; ObjectID = "LqY-AA-mpO"; */
+"LqY-AA-mpO.title" = "移除所有";
+
+/* Class = "UILabel"; text = "Choose the language for ATM details"; ObjectID = "PAN-rx-Fok"; */
+"PAN-rx-Fok.text" = "選擇應用程式的語言";
+
+/* Class = "UITabBarItem"; title = "Map"; ObjectID = "RfN-Qs-pWC"; */
+"RfN-Qs-pWC.title" = "地圖";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "STv-7e-HTd"; */
+"STv-7e-HTd.text" = "Title";
+
+/* Class = "UILabel"; text = "Banks"; ObjectID = "XBg-Ht-F4m"; */
+"XBg-Ht-F4m.text" = "銀行";
+
+/* Class = "UILabel"; text = "語言"; ObjectID = "Y4L-D5-JDJ"; */
+"Y4L-D5-JDJ.text" = "語言";
+
+/* Class = "UIBarButtonItem"; title = "Select all"; ObjectID = "bxj-Ie-18v"; */
+"bxj-Ie-18v.title" = "選擇全部";
+
+/* Class = "UITableViewSection"; headerTitle = "General"; ObjectID = "cll-EY-uBu"; */
+"cll-EY-uBu.headerTitle" = "一般設定";
+
+/* Class = "UILabel"; text = "Field content"; ObjectID = "mc9-E2-BUl"; */
+"mc9-E2-BUl.text" = "Field content";
